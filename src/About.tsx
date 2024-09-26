@@ -1,16 +1,8 @@
-import { StrictMode, useState } from "react";
-import { createRoot } from "react-dom/client";
+import { useState } from "react";
 import "./App.css";
-import "./index.css";
+import { renderApp } from "./main";
 
-const root = document.getElementById("root");
-if (!root) throw new Error("Root element not found");
-
-createRoot(root).render(
-	<StrictMode>
-		<App />
-	</StrictMode>,
-);
+renderApp(<App />);
 
 // このApp()のexportは不要なんだけど、これを削除すると
 // `[vite] hmr invalidate /src/About.tsx Could not Fast Refresh ("true" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react-swc#consistent-components-exports`

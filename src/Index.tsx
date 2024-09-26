@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import viteLogo from "/vite.svg";
 import reactLogo from "./assets/react.svg";
+import { renderApp } from "./main";
+import viteLogo from "/vite.svg";
 
-function App() {
+renderApp(<App />);
+
+export function App() {
 	const [count, setCount] = useState(0);
 
 	return (
