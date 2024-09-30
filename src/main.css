@@ -1,5 +1,5 @@
 /* main.css */
 
 nav a + a::before {
-    content: ' | ';
+	content: " | ";
 }

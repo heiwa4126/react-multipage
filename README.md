@@ -54,4 +54,3 @@ Rollup の設定でどうにかならないか考える。
 
 - [マルチページアプリ - 本番環境用のビルド | Vite](https://ja.vitejs.dev/guide/build.html#multi-page-app)
 - [シングルページアプリケーションのライブラリでマルチページしたい！ #React - Qiita](https://qiita.com/umiushi_1/items/1c6affdef13d405e1248)
-
