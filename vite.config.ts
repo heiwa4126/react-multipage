@@ -10,6 +10,7 @@ export default defineConfig({
 			input: {
 				index: "index.html",
 				about: "about.html",
+				"404": "404.html",
 			},
 			// output: {
 			// 	manualChunks: {

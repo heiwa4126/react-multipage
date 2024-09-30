@@ -8,3 +8,21 @@ export function renderApp(app: JSX.Element, elementId = "root") {
 
 	createRoot(root).render(<StrictMode>{app}</StrictMode>);
 }
+
+export function Nav() {
+	return (
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="foo.html">Non-existent page (404 test)</a>
+		</nav>
+	);
+}
+
+export function Nav0() {
+	return (
+		<nav>
+			<a href="index.html">Home</a>
+		</nav>
+	);
+}

@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# react-multipage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React(+Vite) だけで本当のマルチページのサイトを作る例。
 
-Currently, two official plugins are available:
+- react-router-dom でない。
+- 各ページをブックマーク可能にしたい (react-router-dom の HashRouter は RFC 3986 的に微妙だし、アンカーが使えなくなるし)
+- Next.js や Remix はめんどい (覚えるのも配置も)
+- SSR,SSG いらない。CSR と本当に静的なページだけあればいい
+- 「ページ」数もあまり多くない。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+というようなケースで使える手法。
 
-## Expanding the ESLint configuration
+「複数 SPA を配置する」ような状態なので
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- state は何かステートライブラリなり cookie なりで共有する
+- コードや chunks は共有できるよう考える
 
-- Configure the top-level `parserOptions` property like this:
+べき。
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## 404 ページのメモ
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+404 ページなどは、配置する環境に左右される。それはしょうがない。
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+`pnpm dev` または `pnpm build && pnpm preview` だと、存在しないページは index.html になる。
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+実際に配置した場合に近い
+`pnpm build && http-server dev/` だと 存在しないページは 404.html になる。
+
+## TODO
+
+いまのままだと HTML がプロジェクトルートに散らばる。
+例えば ./html/index.html にすると./dist/html/index.html にビルドされてしまう。
+Rollup の設定でどうにかならないか考える。
+
+## 参考
+
+[マルチページアプリ - 本番環境用のビルド | Vite](https://ja.vitejs.dev/guide/build.html#multi-page-app)
