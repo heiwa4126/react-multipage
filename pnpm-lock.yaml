@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       jotai:
-        specifier: ^2.10.0
-        version: 2.10.0(@types/react@18.3.10)(react@18.3.1)
+        specifier: ^2.11.0
+        version: 2.11.0(@types/react@18.3.10)(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -404,8 +404,8 @@ packages:
   is-reference@3.0.2:
     resolution: {integrity: sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==}
 
-  jotai@2.10.0:
-    resolution: {integrity: sha512-8W4u0aRlOIwGlLQ0sqfl/c6+eExl5D8lZgAUolirZLktyaj4WnxO/8a0HEPmtriQAB6X5LMhXzZVmw02X0P0qQ==}
+  jotai@2.11.0:
+    resolution: {integrity: sha512-zKfoBBD1uDw3rljwHkt0fWuja1B76R7CjznuBO+mSX6jpsO1EBeWNRKpeaQho9yPI/pvCv4recGfgOXGxwPZvQ==}
     engines: {node: '>=12.20.0'}
     peerDependencies:
       '@types/react': '>=17.0.0'
@@ -788,7 +788,7 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.6
 
-  jotai@2.10.0(@types/react@18.3.10)(react@18.3.1):
+  jotai@2.11.0(@types/react@18.3.10)(react@18.3.1):
     optionalDependencies:
       '@types/react': 18.3.10
       react: 18.3.1
