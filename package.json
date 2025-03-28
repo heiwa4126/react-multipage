@@ -12,17 +12,17 @@
 	},
 	"dependencies": {
 		"jotai": "^2.12.2",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
+		"react": "^18",
+		"react-dom": "^18"
 	},
 	"devDependencies": {
-		"@types/node": "^22.13.13",
-		"@types/react": "^18.3.20",
-		"@types/react-dom": "^18.3.5",
+		"@types/node": "^22.13.14",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
 		"@vitejs/plugin-react-swc": "^3.8.1",
 		"typescript": "^5.8.2",
 		"vite": "^6.2.3",
 		"vite-plugin-cdn-import": "^1.0.1"
 	},
-	"packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
+	"packageManager": "pnpm@10.7.0"
 }
