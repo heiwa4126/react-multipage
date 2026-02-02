@@ -11,7 +11,7 @@
 		"check": "biome check . --write && dprint check"
 	},
 	"dependencies": {
-		"jotai": "^2.12.2",
+		"jotai": "^2.17.0",
 		"react": "^18",
 		"react-dom": "^18"
 	},
