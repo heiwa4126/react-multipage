@@ -12,12 +12,12 @@
 	},
 	"dependencies": {
 		"jotai": "^2.12.2",
-		"react": "^18",
-		"react-dom": "^18"
+		"react": "^19",
+		"react-dom": "^19"
 	},
 	"devDependencies": {
 		"@types/node": "^25.2.0",
-		"@types/react": "^18",
+		"@types/react": "^19",
 		"@types/react-dom": "^18",
 		"@vitejs/plugin-react-swc": "^4.2.2",
 		"typescript": "^5.9.3",
