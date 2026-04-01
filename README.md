@@ -1,5 +1,7 @@
 # react-multipage
 
+**注意: Vite8 にしたら動かなくなった。dev では動くが build & preview ではダメ。直す(2026-04)**
+
 React(+Vite) だけで本当のマルチページのサイトを作る例。
 
 <https://heiwa4126.github.io/react-multipage/> として GitHub Pages に発行してあります。
