@@ -1,14 +1,16 @@
 {
 	"name": "react-multipage",
-	"private": true,
 	"version": "0.0.4",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"preview": "vite preview",
-		"format": "biome format . --write && dprint fmt",
-		"check": "biome check . --write && dprint check"
+		"preinstall": "pnpm audit",
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
 		"jotai": "^2.19.0",

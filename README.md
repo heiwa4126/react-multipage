@@ -38,7 +38,7 @@ pnpm run build & pnpm preview
 `pnpm dev` または `pnpm build && pnpm preview` だと、存在しないページは index.html になる。
 
 実際に配置した場合に近い
-`pnpm build && http-server dev/` だと 存在しないページは 404.html になる。
+`pnpm build && http-server dev/` だと存在しないページは 404.html になる。
 
 あといま 404.html が CSS やコードの共有用に JSX になってるけど、
 これ純粋に public/404.html でもいいのでは。
