@@ -1,23 +1,28 @@
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import cdn from "vite-plugin-cdn-import";
+// import cdn from "vite-plugin-cdn-import";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react(), cdn({ modules: ["react", "react-dom"] })],
-	base: process.env.GITHUB_REPO_NAME ?? "./",
+	plugins: [react()],
+	base: process.env.GITHUB_REPO_NAME ?? "/",
 	build: {
-		rollupOptions: {
+		minify: true,
+		rolldownOptions: {
+			external: ["react", "react-dom/client"],
 			input: {
 				index: "index.html",
 				about: "about.html",
 				"404": "404.html",
 			},
-			// output: {
-			// 	manualChunks: {
-			// 		r: ["react", "react-dom"],
-			// 	},
-			// },
+						output: {
+				minify: {
+					compress: {
+						dropConsole: true,
+						dropDebugger: true,
+					},
+				},
+			},
 		},
 	},
 });
