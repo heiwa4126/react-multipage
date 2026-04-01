@@ -15,7 +15,7 @@ export default defineConfig({
 				about: "about.html",
 				"404": "404.html",
 			},
-						output: {
+			output: {
 				minify: {
 					compress: {
 						dropConsole: true,
