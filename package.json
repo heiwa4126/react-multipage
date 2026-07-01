@@ -14,12 +14,12 @@
 	},
 	"dependencies": {
 		"jotai": "^2.20.0",
-		"react": "^19.2.6",
+		"react": "^19.2.7",
 		"react-dom": "^19.2.4"
 	},
 	"devDependencies": {
 		"@types/node": "^25.9.1",
-		"@types/react": "^19.2.15",
+		"@types/react": "^19.2.17",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^6.0.3",
 		"typescript": "^6.0.3",
