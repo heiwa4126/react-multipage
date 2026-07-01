@@ -13,7 +13,7 @@
 		"check": "oxfmt && oxlint --fix"
 	},
 	"dependencies": {
-		"jotai": "^2.20.0",
+		"jotai": "^2.20.1",
 		"react": "^19.2.7",
 		"react-dom": "^19.2.4"
 	},
